@@ -1,0 +1,24 @@
+.menu {
+    height: 100vh;
+    background-color: #003366;
+}
+
+img {
+    width: 50vw;
+    z-index: 0;
+    margin-top: -350px;
+    position: relative;
+}
+
+.breedNameSearch {
+    font-size: 90pt;
+    margin-top: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 767px) {
+    img {
+        width: 75vw;
+    }
+}

@@ -82,7 +82,8 @@ session_start();
             <div class="col-12 col-md-8 mt-5">
                 <div class="row">
                     <div id="search-result" class="col text-center">
-                        <?php if ($_SESSION['search']->status == 'success') : ?>
+                        <?php if (isset($_SESSION['search'])) :
+                        if ($_SESSION['search']->status == 'success') : ?>
                             <p class="breedNameSearch mb-5">
                                 <?php echo $_SESSION['breed']; ?>
                             </p>
@@ -91,7 +92,8 @@ session_start();
                             <p>
                                 <?php echo $_SESSION['search']->message; ?>
                             </p>
-                        <?php endif; ?>
+                        <?php endif;
+                        endif; ?>
                     </div>
                 </div>
             </div>
